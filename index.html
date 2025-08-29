@@ -24,11 +24,71 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    
 
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .roboto-font {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .bebas-neue-font {
+        font-family: "Bebas Neue", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header></header>
+
+  <body class="roboto-font">
+    <header>
+      <!-- navbar -->
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">daisyUI</a>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-34 p-2 shadow-sm"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
 
     <main></main>
 
