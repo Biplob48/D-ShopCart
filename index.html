@@ -39,13 +39,31 @@
         font-style: normal;
       }
 
-      .bebas-neue-regular {
+      .bebas-neue-font {
         font-family: "Bebas Neue", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
     </style>
+
+    <!-- Font color customization -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              price: "#FABE4C",
+              title: "#363958",
+              linear1: "#A4BC46",
+              linear2: "#85A019",
+            },
+          },
+        },
+      };
+    </script>
   </head>
+
   <body>
     <header class="roboto-font">
       <!-- navbar -->
@@ -56,7 +74,7 @@
               <img
                 src="./icons/logo.png"
                 alt="fashion logo"
-                class="w-52 md:w-72 h-7 md:h-10 mt-5 md:mt-8"
+                class="w-52 md:w-72 h-7 md:h-10 mt-6 md:mt-9"
               />
             </a>
           </div>
@@ -105,18 +123,70 @@
           </div>
 
           <!-- div>ul>li*4>a -->
-          <div class="navbar-center hidden md:flex mt-8">
+          <div class="navbar-center hidden md:flex mt-9 mb-5">
             <ul class="menu menu-horizontal gap-x-5">
-              <li class="hover:bg-red-300 rounded-md hover:text-red-900"><a href="">Home</a></li>
-              <li class="hover:bg-red-300 rounded-md hover:text-red-900"><a href="">Product</a></li>
-              <li class="hover:bg-red-300 rounded-md hover:text-red-900"><a href="">About us</a></li>
-              <li class="hover:bg-red-300 rounded-md hover:text-red-900"><a href="">Contact us</a></li>
+              <li class="hover:bg-red-300 rounded-md hover:text-red-900">
+                <a href="">Home</a>
+              </li>
+              <li class="hover:bg-red-300 rounded-md hover:text-red-900">
+                <a href="">Product</a>
+              </li>
+              <li class="hover:bg-red-300 rounded-md hover:text-red-900">
+                <a href="">About us</a>
+              </li>
+              <li class="hover:bg-red-300 rounded-md hover:text-red-900">
+                <a href="">Contact us</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
 
       <!-- banner section -->
+      <div class="container mx-auto">
+        <div class="hero-content justify-between">
+          <div class="py-1">
+            <h1 class="bebas-neue-font">
+              <span class="text-price font-normal text-[75px]"
+                >BE THE PENGUINS <br
+              /></span>
+              <span class="text-title font-normal text-[75px]">OF WINTER</span>
+            </h1>
+            <p class="font-normal text-base">
+              From timeless classics to modern essentials, we <br />
+              bring you products that inspire. Design your <br />
+              shopping journey with us today.
+            </p>
+
+            <!-- button -->
+            <button
+              class="btn bg-gradient-to-r from-linear1 to-linear2 w-40 h-14 text-white gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="white"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="white"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                /></svg
+              >BUY NOW
+            </button>
+          </div>
+          <div>
+            <img
+              src="./images/model.png"
+              alt="fasion model image"
+              class="w-[550px] h-[560px]"
+            />
+          </div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>
